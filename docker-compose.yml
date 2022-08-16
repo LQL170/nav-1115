@@ -6,4 +6,4 @@ services:
     volumes:
       - ./public/conf:/app/dist/conf
     ports:
-      - 3001:80
+      - 80:80
