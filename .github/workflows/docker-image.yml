@@ -12,11 +12,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    # strategy:
-    #   matrix:
-    #      node-version: [16.x]
+    strategy:
+      matrix:
+         node-version: [16.x]
     
-    # steps:
+    steps:
     # - uses: actions/checkout@v3
     # - name: Use Node.js ${{ matrix.node-version }}
     #   uses: actions/setup-node@v3
@@ -28,10 +28,10 @@ jobs:
     #     npm install
     #     npm run build
 
-      - uses: actions/checkout@v3
-      - name: Build the Docker image
-        run: |
-          docker login --username=${{ secrets.DOCKER_HUB_USER }} --password=${{ secrets.DOCKER_HUB_PASSWD }}
-          docker build . --file Dockerfile --tag nav-1115 
-          docker tag nav-1115:latest liqiling/nav-1115
-          docker push liqiling/nav-1115
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: |
+        docker login --username=${{ secrets.DOCKER_HUB_USER }} --password=${{ secrets.DOCKER_HUB_PASSWD }}
+        docker build . --file Dockerfile --tag nav-1115 
+        docker tag nav-1115:latest liqiling/nav-1115
+        docker push liqiling/nav-1115
