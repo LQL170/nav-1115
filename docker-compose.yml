@@ -7,3 +7,5 @@ services:
       - ./public/conf:/app/dist/conf
     ports:
       - 80:80
+      - 443:443
+
