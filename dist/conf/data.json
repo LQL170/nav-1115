@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "role": "内部工具",
+      "list": [
+        {
+          "name": "Proxmox",
+          "desc": "Powerful open-source server solutions",
+          "url": "https://10.0.0.2:8006/",
+          "icon": "proxmox.png"
+        },
+        {
+          "name": "Openwrt",
+          "desc": "The OpenWrt Project is a Linux operating system targeting embedded devices.",
+          "url": "http://10.0.0.3/",
+          "icon": "openwrt.png"
+        },
+        {
+          "name": "IKuai",
+          "desc": "软路由 web 管理",
+          "url": "http://10.0.0.1/",
+          "icon": "ikuai.png"
+        },
+        {
+          "name": "Nas",
+          "desc": "nas web 管理",
+          "url": "http://10.0.0.100:5000/",
+          "icon": "nas.png"
+        }
+      ]
+    }
+  ],
+  "config": {}
+}
