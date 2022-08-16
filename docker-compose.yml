@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  nav-1115:
+    image: liqiling/nav-1115
+    restart: always
+    volumes:
+      - ./public/conf:/app/dist/conf
+    ports:
+      - 3001:80
