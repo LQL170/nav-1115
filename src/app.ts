@@ -1,12 +1,13 @@
 import { defineComponent, onMounted, ref } from "vue";
 import { getData } from "@/data";
-import type { Data } from "@/data";
+import { VCard, VTheme } from "@/components";
 
-import VCard from "@/components/card/index.vue";
+import type { Data } from "@/data";
 
 export const setup = defineComponent({
   components: {
     VCard,
+    VTheme
   },
   setup() {
     const data = ref<Data>({ data: [] });

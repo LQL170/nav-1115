@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background: #fff;
+:root {
+  --bg: #fff;
+  --gray-soft: #f9f9f9;
+  --text-color: #213547;
+  --text-light: theme("colors.gray.500");
 }
 
-:root {
-  --white-soft: #f9f9f9;
-  --gray-light: #e5e5e5;
-  --text-light: theme("colors.gray.500")
+:root[theme="dark"] {
+  --bg: #242424;
+  --gray-soft: #2f2f2f;
+  --text-color: rgba(255, 255, 255, .87);
+  --text-light: theme("colors.gray.500");
+}
+
+html {
+  background: var(--bg);
+  color: var(--text-color);
 }

@@ -30,5 +30,7 @@
       ]
     }
   ],
-  "config": {}
+  "config": {
+    "title": "NAV"
+  }
 }

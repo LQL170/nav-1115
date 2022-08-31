@@ -11,9 +11,12 @@
     "docker:push": "docker tag nav-1115:latest liqiling/nav-1115 && docker push liqiling/nav-1115"
   },
   "dependencies": {
+    "@icon-park/vue-next": "^1.4.2",
+    "@m170/utils": "^1.0.64",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@m170/types": "^1.0.6",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@types/node": "^16.11.48",

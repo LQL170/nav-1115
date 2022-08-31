@@ -1,16 +1,18 @@
-export interface CardItem {
+interface CardItem {
   name: string;
   desc: string;
   url: string;
   icon?: string;
 }
 
-export interface Cards {
+interface Cards {
   role: string;
   list: CardItem[];
 }
 
-export interface Conf {}
+interface Conf {
+  title: string;
+}
 
 export interface Data {
   data: Cards[];
@@ -26,9 +28,17 @@ function handleUrl(name: string) {
   return `/conf/icon/${name}`;
 }
 
+/** 配置设置 */
+function handleConf(conf?: Conf) {
+  if (conf?.title) {
+    document.title = conf.title;
+  }
+}
+
 export async function getData() {
   const res = await fetch("/conf/data.json");
   const data: Data = await res.json();
+  handleConf(data.config);
   data.data.forEach(({ list }) => {
     list.forEach((item) => {
       if (item.icon) {
