@@ -1,6 +1,6 @@
 <template>
   <a target="_blank" class="p-6 " :href="card.url">
-    <div class="icon mb-4 inline-block h-16 rounded p-2">
+    <div class="icon mb-4 inline-block h-16 rounded py-2">
       <img :src="card.icon" v-if="card.icon" class="h-full max-w-full" />
       <div class="flex h-full items-center px-1 text-xl font-bold" v-else>
         <span>{{ card.name.toUpperCase() }}</span>

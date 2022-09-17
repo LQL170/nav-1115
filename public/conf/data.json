@@ -26,6 +26,11 @@
           "desc": "nas web 管理",
           "url": "http://10.0.0.100:5000/",
           "icon": "nas.png"
+        },
+        {
+          "name": "qBittorrent",
+          "desc": "nas pt",
+          "url": "http://qiudren.com:6363/"
         }
       ]
     }
