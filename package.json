@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "docker:build": "pnpm build && docker build . --file Dockerfile --tag nav-1115 ",
     "docker:push": "docker tag nav-1115:latest liqiling/nav-1115 && docker push liqiling/nav-1115",
-    "up": "docker pull liqiling/nav-1115 && docker compose up -d"
+    "up": "git pull && docker pull liqiling/nav-1115 && docker compose up -d"
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
