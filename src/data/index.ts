@@ -1,4 +1,4 @@
-interface CardItem {
+export interface CardItem {
   name: string;
   desc: string;
   url: string;
