@@ -1,0 +1,1 @@
+git pull && docker pull liqiling/nav-1115 && docker compose up -d
